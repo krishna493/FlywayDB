@@ -16,6 +16,10 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<flyway.url>jdbc:mysql://localhost:3306/flywaydb?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;</flyway.url>
+		<flyway.user>root</flyway.user>
+		<flyway.password>password</flyway.password>
+		
 	</properties>
 
 	<dependencies>
