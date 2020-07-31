@@ -22,7 +22,7 @@ pipeline {
             steps {
                sh 'mvn flyway:migrate'
                 }
-        }
+        
 		 post {
 			always {
 				 sh '''
@@ -42,6 +42,7 @@ pipeline {
 			changed {
 				echo 'Things were different before...'
 			}
+		 }
     }
     }
 }
